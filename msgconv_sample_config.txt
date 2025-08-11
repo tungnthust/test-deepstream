@@ -1,0 +1,70 @@
+{
+  "messageid": "uuid",
+  "mdsversion": "1.0", 
+  "@timestamp": "ts",
+  "place": {
+    "id": "placeId",
+    "name": "place",
+    "type": "areaId",
+    "location": {
+      "lat": "place.location.lat",
+      "lon": "place.location.lon",
+      "alt": "place.location.alt"
+    }
+  },
+  "sensor": {
+    "id": "sensorId",
+    "type": "sensorStr",
+    "location": {
+      "lat": "sensor.location.lat", 
+      "lon": "sensor.location.lon",
+      "alt": "sensor.location.alt"
+    }
+  },
+  "analyticsModule": {
+    "id": "moduleId",
+    "description": "module",
+    "source": "module.source",
+    "version": "module.version"
+  },
+  "object": {
+    "id": "objectId",
+    "speed": 0.0,
+    "direction": 0.0,
+    "orientation": 0.0,
+    "face": {
+      "age": 0,
+      "gender": "",
+      "hair": "",
+      "cap": "",
+      "glasses": "",
+      "facialhair": "",
+      "name": "",
+      "eyecolor": "",
+      "confidence": 1.0
+    },
+    "bbox": {
+      "topleftx": "bbox.left",
+      "toplefty": "bbox.top", 
+      "bottomrightx": "bbox.left + bbox.width",
+      "bottomrighty": "bbox.top + bbox.height"
+    },
+    "location": {
+      "lat": "location.lat",
+      "lon": "location.lon", 
+      "alt": "location.alt"
+    },
+    "coordinate": {
+      "x": "coordinate.x",
+      "y": "coordinate.y",
+      "z": "coordinate.z"
+    },
+    "pose": {},
+    "full_frame_path": "otherAttrs.full_frame_path",
+    "crop_path": "otherAttrs.crop_path"
+  },
+  "event": {
+    "id": "eventId"
+  },
+  "videoPath": ""
+}

@@ -1,0 +1,15 @@
+# nvtracker_config.txt
+[property]
+enable-batch-process=0
+gpu-id=0
+tracker-width=640
+tracker-height=384
+# Use NvDCF tracker
+ll-lib-file=/opt/nvidia/deepstream/deepstream-7.1/lib/libnvds_nvmultiobjecttracker.so
+ll-config-file=/opt/nvidia/deepstream/deepstream-7.1/samples/configs/deepstream-app/config_tracker_NvDCF_max_perf.yml
+# OR use IOU tracker (uncomment lines below, comment lines above)
+# ll-lib-file=/opt/nvidia/deepstream/deepstream/lib/libnvds_nvdcf.so
+# ll-config-file=/opt/nvidia/deepstream/deepstream/samples/configs/deepstream-app/config_tracker_IOU.yml
+
+# Display tracking ID on OSD (optional, good for debugging)
+display-tracking-id=1

@@ -1,0 +1,15 @@
+[message-converter]
+enable = 1
+config-file = ../msgconv_config.txt
+payload-type = 0
+
+[converter]
+metadata-type = 0
+
+[custom-fields]
+enable = 1
+field-list = otherAttrs
+
+[otherAttrs]
+name = otherAttrs
+format = %s
